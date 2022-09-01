@@ -4,27 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="inicio_estilo.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Tela inicial</title>
 </head>
 <body>
 
     <header>
-        <div class="site_logo">
+        <div class="site-logo">
         <h1>Logo</h1>
         </div>
 
-        <div class="menu_barra">
-            <a href="#"><i class="fa-solid fa-bars"></i></a>
+        <div class="header-direita">
+        <nav>
+            <ul>
+                <li><a href="#">Cadastrar usuário</a></li>
+                <li><a href="#">Cadastrar clientes</a></li>
+                <li><a href="#">Clientes desativados</a></li>
+                <li><a href="#"><i class="fa-solid fa-bell"></i></a></li>
+                <li><a href="#"><h2>Perfil</h2></a></li>
+            </ul>
+        </nav>
             </div>
         
-        <div class="notificacao">
-             <a href="#"><i class="fa-solid fa-bell"></i></a>
-             </div>
-
-        <div class="perfil_usuario">
-            <a href="#"><h2>Perfil</h2></a>
-        </div>
     </header>
 
     <main>
@@ -33,17 +35,32 @@
         <h1>Clientes</h1>
         </div>
 
-        <div class="pesquisa_barra">    
-        <h2> barra de pesquisa</h2> 
+        <div class="pesquisa-barra"> 
+        <input type="text" />
+        <span>Organizar por:</span>
+        <select name="organizar_por">
+            <option>Nome de A-Z</option>
+            <option>Data de nascimento</option>
+        </select>
+            <div class="filtro">
+                <span>Filtar:</span>
+                <select name="filtrar_por">
+                    <option>Nome completo</option>
+                    <option>Login</option>
+                    <option>Procedência</option>
+                </select>
+                </div>
+                <button class="btn-pesquisa">Buscar</button>
         </div>
+      
+        <div class="lista-clientes">
+            <div class="titulo-lista">
+                <div class="titulo-coluna">Nome</div>
+                <div class="titulo-coluna">Data de nascimento</div>
+                <div class="titulo-coluna">Contato</div>
+                <div class="titulo-coluna">Procedência</div>
+            </div>
 
-        <div class="filro">
-        <h2> Filtro</h2>
-        </div>
-
-        <button class="btn_pesquisa">Buscar</button>
-        
-        <div class="lista_clientes">
         <ul>
             <li>Cliente 1</li>
             <a href="#"><i class="fa-solid fa-pen-to-square"></i></a>
@@ -60,6 +77,10 @@
           </ul>
         </div>
     </main>
+
+    <footer>
+        <h1>Aqui é o footer.</h1>
+    </footer>
 
 </body>
 </html>
